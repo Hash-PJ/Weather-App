@@ -63,7 +63,7 @@ def main():
     if len(sys.argv) < 2:
         print("Usage: Python weather.py <city>")
         sys.exit(1)
-    city = "".join(sys.argv[1:])
+    city = " ".join(sys.argv[1:])
     weather = get_weather(city)
     if weather:
         display_weather(weather)
